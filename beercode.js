@@ -591,7 +591,7 @@ client.on("message", async message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} kiss ${user.username}!`,
+          description: `Random Kiss🥺`,
           color: `c6df00`,
           image: {
             url: kiss💋[Math.floor(Math.random() * Kiss.length)]
