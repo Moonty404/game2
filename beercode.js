@@ -75,29 +75,33 @@ client.on("message", message => {
 [Invite](https://discord.com/api/oauth2/authorize?client_id=860481024731774976&permissions=285761&scope=bot)
 [Support](https://discord.gg/K8SSqweuSH)
 **💎 Economy 💎**
-
 **💵Adaily**
 Daily Amounts gets 
-
 **💼Acash**
 [@user] & info your balance 
-
 **♻️Asend**
 Transfer a Apollo cash & <@user> <amount>
-
 **🎖️Arank**
 [@user] & info your xp
-
 **🤑Ashop**
 Yor Home For Shopping
-~~🔰       •        🔰~~
+~~⚪️               ⚪️~~
 **👾Gambling👾**
-
 **🎰Aslots** <bet>
-
 **🪙Acoinflip** <bet>
-
 **🐟Afish** <bet>
+~~🟡               🟡~~
+**😄 Funny 😄 **
+
+**💋Akiss**[@user]
+**🥺Ahug**[@user]
+**🏞️Aimages** <boy> <girl> <baby>
+~~⚫️               ⚫️~~
+**⚙️ Public ⚙️**
+
+**✅Ainvite** (Apollo Invite)
+**👤Auser** [@user]
+**💎Aabout** (info Apollo)
 `);
     message.channel.send(embed);
   }
