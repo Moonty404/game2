@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(new Discord.MessageEmbed()
                       .setColor("#ffff00")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`<a:emoji_22:870143282594865213> You Have A Cooldown For __coinflip__
+                        .setDescription(`<a:gem2l2:872905739704868954> You Have A Cooldown For __coinflip__
                         **Time left**
                         ${time.seconds ? time.seconds + 'seconds' : 'try again!'}`))
       } else {
@@ -24,7 +24,7 @@ exports.run = async (client, message, args) => {
   if(!miktar) return message.channel.send(new Discord.MessageEmbed()
                                         .setColor("#ffff00")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`You Can't More Than<:emoji_61:867523675304624148> 50,000`))
+                                        .setDescription(`You Can't More Than<a:emoji_40:873255039009968168> 50,000`))
  if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
                                         .setColor("#ffff00")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
@@ -46,11 +46,11 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
      if (awnser === "LOOSELOOSE") {
  var kaybettin = miktar*2        
         //////        
-        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_3:870056915542081557> Choice win Or Lost**`;
+        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_12:878402675161591838> Choice win Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}>spent cowoncy ${-kaybettin} 50000-<a:emoji_8:870059060714700870> and chose heads
-The coin spins...<a:emoji_8:870059060714700870> tail and you lost it all...loose (loose)**`);
+              msg.edit(`**<@${message.author.id}>spent cowoncy ${-kaybettin} <:AAcfTails:878401931305967666> and chose heads
+The coin spins...<:AAcfTails:878401931305967666> tail and you lost it all...loose (loose)🔴**`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
@@ -58,11 +58,11 @@ The coin spins...<a:emoji_8:870059060714700870> tail and you lost it all...loose
       } else { 
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
           var kazandın = miktar*2
-        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_3:870056915542081557> Choice win Or Lost**`;
+        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_12:878402675161591838> Choice win Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}> spent cowoncy ${kazandın} 50,000<a:emoji_10:870059089055592508> and chose heads
-The coin spins...<a:emoji_10:870059089055592508> coinflip win (win)**`);
+              msg.edit(`**<@${message.author.id}> spent cowoncy ${kazandın} <:para1:878402722653675520> and chose heads
+The coin spins...<:para1:878402722653675520> coinflip win (win)🟢**`);
             }, 3000);
           });
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   
