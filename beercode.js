@@ -71,7 +71,7 @@ client.on("message", message => {
       .setImage(`https://media.discordapp.net/attachments/867897161373843499/878766850698280970/image0.jpg`)
       .setThumbnail(client.user.avatarURL())
       .setColor("c6df00")
-      .setAuthor("Random Bot Help please type Rrules").setDescription(`
+      .setAuthor("Apollo Help Menu").setDescription(`
 [Invite](https://discord.com/api/oauth2/authorize?client_id=860481024731774976&permissions=285761&scope=bot)
 [Support](https://discord.gg/K8SSqweuSH)
 **💎 Economy 💎**
@@ -90,7 +90,7 @@ Transfer a Apollo cash & <@user> <amount>
 
 **🤑Ashop**
 Yor Home For Shopping
-
+~~🔰~~────────────────~~🔰~~
 **👾Gambling👾**
 
 **🎰Aslots** <bet>
