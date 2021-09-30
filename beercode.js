@@ -74,17 +74,30 @@ client.on("message", message => {
       .setAuthor("Random Bot Help please type Rrules").setDescription(`
 [Invite](https://discord.com/api/oauth2/authorize?client_id=860481024731774976&permissions=285761&scope=bot)
 [Support](https://discord.gg/K8SSqweuSH)
-[Website](https://www.randombot.cf/)
-<a:emoji_180:878693769619324938> **User Commands**
-**__about - avatar - server invite - support - lock - unlock - kick - role  clear__**
-<a:emoji_1:873254118548967464>  **Economy Commands**
-**__daily[d] - cash[c] - work[w] - send - steal - shop__**
-<a:astersa:873253425729642587> **Game Commands**
-**__coinflip[cf] - slots[s] - fish[f]__**
-<a:emoji_16:845102603468800011> **Gifs Command**
-**__boy - girl - baby - couple - sad - neon - smoking - emoji - anime__**
-<a:emoji_19:845102659626860554>  **Photos Command**
-**__pboy - pgirl - pemoji - panime - pcouple__**
+**💎 Economy 💎**
+
+**💵Adaily**
+Daily Amounts gets 
+
+**💼Acash**
+[@user] & info your balance 
+
+**♻️Asend**
+Transfer a Apollo cash & <@user> <amount>
+
+**🎖️Arank**
+[@user] & info your xp
+
+**🤑Ashop**
+Yor Home For Shopping
+
+**👾Gambling👾**
+
+**🎰Aslots** <bet>
+
+**🪙Acoinflip** <bet>
+
+**🐟Afish** <bet>
 `);
     message.channel.send(embed);
   }
