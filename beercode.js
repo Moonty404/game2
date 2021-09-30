@@ -90,7 +90,7 @@ Transfer a Apollo cash & <@user> <amount>
 
 **🤑Ashop**
 Yor Home For Shopping
-~~🔰~~────────────────~~🔰~~
+~~🔰       •        🔰~~
 **👾Gambling👾**
 
 **🎰Aslots** <bet>
