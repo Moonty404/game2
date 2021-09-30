@@ -8,36 +8,36 @@ exports.run = async(client, message) => {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 } 
-//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
+//== BEERCODE (https://discord.gg/) BEERCODE ==\\
 let times = await db.fetch(`worktime_${message.author.id}`)
-  let day = 86400000
+  let day = 8640000000
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   if (times !== null && day - (Date.now() - times) > 0) {
         let time = ms(day - (Date.now() - times));
     message.channel.send(new Discord.MessageEmbed()
                         .setColor("GREEN")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`<a:emoji_22:870143282594865213> You Have A Cooldown For __daily__
+                        .setDescription(`<a:sa7zard:873253325464829982> You Have A Cooldown For __daily__
                         
   **Time Left**
   
 ${time.hours ? time.hours + " hour": ""} ${time.minutes ? time.minutes + ' minute' : ''} ${time.seconds ? time.seconds+ '' : 're-enter the command!'}`))
   return
   }
-let moneys = rastgeleMiktar(5000, 7000);
+let moneys = rastgeleMiktar(5000, 6000);
       message.channel.send(new Discord.MessageEmbed()
                    .setColor("YELLOW")
-                   .setFooter('Senro Daily')
+                   .setFooter('Random Bot Daily')
                    .setThumbnail('https://media.discordapp.net/attachments/859402172373925918/870071235248263168/image0.gif')
                    .setAuthor(`Daily Crate Claimed`)
-                   .setDescription(`<a:emoji_1:870056878464462879>__${moneys}__ was added to your balance`))
+                   .setDescription(`<a:sa7zard:873253325464829982>__${moneys}__ was added to your balance`))
 
 db.set(`worktime_${message.author.id}`, Date.now())
 
   db.add(`para_${message.author.id}`, moneys)
     
  };
-//=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
+//=== BEERCODE (https://discord.gg/) BEERCODE ==\\
 exports.conf = {
   enabled: true,
   aliases: ["daily","d"],
