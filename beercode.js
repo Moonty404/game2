@@ -85,18 +85,18 @@ Transfer a Apollo cash & <@user> <amount>
 [@user] & info your xp
 **🤑Ashop**
 Yor Home For Shopping
-~~⚪️               ⚪️~~
+
 **👾Gambling👾**
 **🎰Aslots** <bet>
 **🪙Acoinflip** <bet>
 **🐟Afish** <bet>
-~~🟡               🟡~~
+
 **😄 Funny 😄 **
 
 **💋Akiss**[@user]
 **🥺Ahug**[@user]
 **🏞️Aimages** <boy> <girl> <baby>
-~~⚫️               ⚫️~~
+
 **⚙️ Public ⚙️**
 
 **✅Rinvite** (Random Invite)
@@ -159,29 +159,9 @@ client.on("message", russi => {
   }
 });
 //===============================================================================\\
-client.on("message", habdo => {
-  if (habdo.content.startsWith("Rkick")) {
-    if (!habdo.guild) return;
-    if (!habdo.member.hasPermission("KICK_MEMBERS"))
-      return habdo.reply("**You don t have a ram**");
-    let user = habdo.mentions.users.first();
-    if (!user) return habdo.reply("**Kick A Member User**");
-    habdo.guild.member(user).kick();
-    habdo.channel.send(`**✈ \`${user}\` Kicked from the server.**`);
-  }
-});
+
 //===============================================================================\\
-client.on("message", message => {
-  if (message.content.startsWith("Srole")) {
-    var roles = message.guild.roles.cache
-      .map(roles => `${roles.name}, `)
-      .join(" ");
-    let embed = new Discord.MessageEmbed()
-      .setColor("#ffff00")
-      .addField("**Roles Server:**", `**[${roles}]**`);
-    message.channel.send(embed);
-  }
-});
+
 //===============================================================================\\
 client.on("message", habdo => {
   if (habdo.content.startsWith("Ravatar")) {
@@ -224,22 +204,7 @@ client.on("message", message => {
 
 
 //////////////////////////////////////////////////////////////////client.on("message", message => { if (message.content === prefix + "lockall") 
-client.on("message", message => {
-  if (message.content === "Runlock") {
-    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
-    message.delete();
 
-    if (!message.channel.guild) return message.reply("SORRY IM IN SERVER");
-    let bwan = new Discord.MessageEmbed()
-      .setFooter("Has Been Channel unlock")
-      .setColor("#ffff00");
-    message.channel.send(bwan);
-
-    message.channel.updateOverwrite(message.guild.id, {
-      SEND_MESSAGES: true
-    });
-  }
-});
 //===============================================================================\\
 client.on("message", async message => {
   if (message.content.startsWith(`<@${client.user.id}>`)) {
@@ -350,68 +315,40 @@ fs.readdir("./Oyunlar/", (err, files) => {
   });
 });
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
+/////////
 
-client.load = command => {
-  return new Promise((resolve, reject) => {
-    try {
-      let cmd = require(`./Oyunlar/${command}`);
-      client.commands.set(command, cmd);
-      cmd.conf.aliases.forEach(alias => {
-        client.aliases.set(alias, cmd.help.name);
-      });
-      resolve();
-    } catch (e) {
-      reject(e);
-    }
-  });
-}; //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-//====================================================//
-var aaaa = [
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280791993779206/tenor_3.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280895995740210/tenor_7.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280900022140938/tenor_2.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280920800722984/tenor_9.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280921689915411/tenor_10.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280924563275776/tenor.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280929311096842/tenor_5.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280944016457748/tenor_1.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737280945195057193/tenor_6.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737281583412805712/tenor_8.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737281572826382336/tenor_4.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282276320084118/tenor_2.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282249422143488/tenor_3.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282243113910292/tenor_4.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282207579635722/tenor.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282195185467473/tenor_5.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282604176506910/tenor.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282625747681410/tenor_1.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282660250157122/tenor_4.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282929633525851/tenor_11.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282757188911174/tenor_7.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282947119579216/tenor_9.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282750385487932/tenor_5.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282940760883210/tenor_10.gif",
-  "https://cdn.discordapp.com/attachments/733640065200160768/737282991348252683/tenor_13.gif"
-];
-client.on("message", async message => {
-  if (message.content === "Ranimal") {
-    if (message.author.bot) return;
-    if (!message.channel.guild) return message.reply();
-    message.channel
-      .send({
-        embed: {
-          description: `Gif Animel`,
-          color: `#ffff00`,
-          image: {
-            url: aaaa[Math.floor(Math.random() * aaaa.length)]
-          }
-        }
-      })
-      .catch(e => {
-        client.log.error(e);
-      });
-  }
-});
+client.on('message',  (message) => {
+        if(message.content.startsWith(PREFIX + "hug")) {
+  let user = message.mentions.users.first() 
+  if (!user) return message.reply('mention someone to Hug')
+ 
+ 
+  let hugs = [
+    "https://media.discordapp.net/attachments/738277612039962688/775010008437096508/image0.gif"
+  ,"https://media.discordapp.net/attachments/738277612039962688/775010008676433945/image1.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010008823103508/image2.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010008982224896/image3.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009151045692/image4.gif",
+  "https://images-ext-1.discordapp.net/external/4enFwioluJ2wUTxGTx3YhHg_hcVxZcSnVDiJk9-48Ps/http/i.imgur.com/cLHRyeB.gif",
+  "https://images-ext-2.discordapp.net/external/dI8V6HMg-HD1jC6QuJLrBJe9S5z3uXwXD8epc3lg_m4/http/i.imgur.com/FOdbhav.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009322094602/image5.gif",
+  "https://images-ext-2.discordapp.net/external/l2UT2UeLq1KeBWae7c33nm9aKVvnI07iimUxeSkpyL0/http/i.imgur.com/K52NZ36.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009578340382/image6.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009796575262/image7.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009972867082/image8.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010010152566804/image9.gif"
+ 
+ 
+  ];
+ 
+  const embed = new Discord.MessageEmbed()
+.setDescription(`${message.author.username} Hugs ${user.username}!`)
+ 
+.setImage(hugs[Math.floor(Math.random() * hugs.length)])
+.setFooter('Random Bot ')
+message.channel.send(embed)
+ 
+        }})
 /////////
 var anime = [
   "https://cdn.discordapp.com/attachments/608711485849337856/859344238235484200/yawn.gif",
