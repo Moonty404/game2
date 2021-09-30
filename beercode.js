@@ -31,7 +31,7 @@ client.on("message", message => {
       .setImage(`https://media.discordapp.net/attachments/867897161373843499/878760858090631229/image0.jpg`)
       .setThumbnail(client.user.avatarURL())
       .setColor("c6df00")
-      .setAuthor("🟡 Random Bot").setDescription(`
+      .setAuthor("✅ Random Bot").setDescription(`
 **Radnom Bot invite**
 [invite](https://discord.com/api/oauth2/authorize?client_id=860481024731774976&permissions=285761&scope=bot)
 `);
@@ -71,7 +71,7 @@ client.on("message", message => {
       .setImage(`https://media.discordapp.net/attachments/867897161373843499/878766850698280970/image0.jpg`)
       .setThumbnail(client.user.avatarURL())
       .setColor("c6df00")
-      .setAuthor("Apollo Help Menu").setDescription(`
+      .setAuthor("Random Help Menu").setDescription(`
 [Invite](https://discord.com/api/oauth2/authorize?client_id=860481024731774976&permissions=285761&scope=bot)
 [Support](https://discord.gg/K8SSqweuSH)
 **💎 Economy 💎**
@@ -99,9 +99,14 @@ Yor Home For Shopping
 ~~⚫️               ⚫️~~
 **⚙️ Public ⚙️**
 
-**✅Ainvite** (Apollo Invite)
-**👤Auser** [@user]
-**💎Aabout** (info Apollo)
+**✅Rinvite** (Random Invite)
+**👤Ruser** [@user]
+**💎Rabout** (info Random)
+**⭕️Rclear** (For Delete Message)
+**🚥Rserver** (ServerInfo)
+**💁🏼‍♂️Ravatar** (your avatar)
+
+
 `);
     message.channel.send(embed);
   }
@@ -216,25 +221,7 @@ client.on("message", message => {
   }
 });
 //===============================================================================\\
-client.on("message", message => {
-  if (message.content === "Rlock") {
-    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
-    message.delete();
 
-    if (!message.channel.guild) return;
-
-    let bwan = new Discord.MessageEmbed()
-
-      .setFooter("Has Been Channel Lock")
-      .setColor("#ffff00");
-    message.channel.send(bwan);
-
-    message.channel.updateOverwrite(message.guild.id, {
-      SEND_MESSAGES: false
-    });
-  }
-});
-////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////client.on("message", message => { if (message.content === prefix + "lockall") 
 client.on("message", message => {
