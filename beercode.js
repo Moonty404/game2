@@ -988,24 +988,28 @@ client.on("message", async message => {
 });
 ///////
 var gggg = [
-  "https://media.discordapp.net/attachments/738277612039962688/775009108402372608/image0.gif",
-    "https://media.discordapp.net/attachments/738277612039962688/775009109166522428/image1.gif"
-    ,"https://media.discordapp.net/attachments/738277612039962688/775009109383577621/image2.gif",
-    "https://media.discordapp.net/attachments/738277612039962688/775009109585821746/image3.gif",
-    "https://media.discordapp.net/attachments/738277612039962688/775009109749006406/image4.gif",
-  "https://media.discordapp.net/attachments/738277612039962688/775009110177349692/image6.gif",
-    "https://media.discordapp.net/attachments/738277612039962688/775009110373433364/image7.gif",
-  "https://media.discordapp.net/attachments/738277612039962688/775009110525345797/image8.gif",
-  "https://media.discordapp.net/attachments/738277612039962688/775009110663233576/image9.gif"];
+"https://media.discordapp.net/attachments/738277612039962688/775010008437096508/image0.gif"
+  ,"https://media.discordapp.net/attachments/738277612039962688/775010008676433945/image1.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010008823103508/image2.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010008982224896/image3.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009151045692/image4.gif",
+  "https://images-ext-1.discordapp.net/external/4enFwioluJ2wUTxGTx3YhHg_hcVxZcSnVDiJk9-48Ps/http/i.imgur.com/cLHRyeB.gif",
+  "https://images-ext-2.discordapp.net/external/dI8V6HMg-HD1jC6QuJLrBJe9S5z3uXwXD8epc3lg_m4/http/i.imgur.com/FOdbhav.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009322094602/image5.gif",
+  "https://images-ext-2.discordapp.net/external/l2UT2UeLq1KeBWae7c33nm9aKVvnI07iimUxeSkpyL0/http/i.imgur.com/K52NZ36.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009578340382/image6.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009796575262/image7.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010009972867082/image8.gif",
+  "https://media.discordapp.net/attachments/738277612039962688/775010010152566804/image9.gif"];
 client.on("message", async message => {
-  if (message.content === "q") {
+  if (message.content === "Rhug") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
       .send({
         embed: {
-          description: `Photo Girl`,
-          color: `#ffff00`,
+          description: `Hug`,
+          color: `RANDOM`,
           image: {
             url: gggg[Math.floor(Math.random() * gggg.length)]
           }
